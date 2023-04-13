@@ -34,7 +34,7 @@ sudo ./checks_S11.sh
 3. Review findings:
 
 ```bash
-cat insertfilenamehere.txt
+cat yourFileName.txt
 ```
 
 ## Multi-Machine Run
@@ -46,13 +46,22 @@ Run this as you would any bash script. For closed environments and air gapped sy
 sudo chmod a+x checks_S11.sh launcher_S11.sh
 ```
 
-2. Launch the checks_S11.sh, it needs to be launched with elevated permissions so that the commands can execute properly:
+2. Create the `hosts.txt` file and save anywhere (you will input the path to this file when you launch the script). You may also use an existing one, providing it is formatting correctly. The `hosts.txt` file should be formatted such, with a host on each line:
+
+```bash
+host1.example.com
+host2.example.com
+192.168.1.10
+192.168.1.11
+```
+
+3. Launch the checks_S11.sh, it needs to be launched with elevated permissions so that the commands can execute properly:
 
 ```bash
 sudo ./launcher_S11.sh
 ```
 
-3. Review findings; this is done as an option in the launcher. When the background tasks and all checks finish, it will ask if you'd like to review the combined findings. If you click no, and want to still combine the fingings and review (instead of `cat`ing each one), you can run the script below: 
+4. Review findings; this is done as an option in the launcher. When the background tasks and all checks finish, it will ask if you'd like to review the combined findings. If you click no, and want to still combine the fingings and review (instead of `cat`ing each one), you can run the script below: 
 
 ```bash
 #!/bin/bash
