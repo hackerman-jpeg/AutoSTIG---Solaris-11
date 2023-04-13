@@ -20,7 +20,7 @@ It is comprised of three components:
 | `checks_S11.sh`  | This contains all the checks, and is called on by the launcher script. It can be run standalone for a single machine.    |
 | `review_S11.sh`  | This is a helper script for if you would like to combine multiple output files and view in a sorted manner. It must be edited manually within the script to point to the output path       |
 
-
+---
 ## Single Machine Run
 
 Run this as you would any bash script. For closed environments and air gapped systems, simply download this repo as a .`zip` and extract. 
@@ -42,6 +42,8 @@ sudo ./checks_S11.sh
 ```bash
 cat yourFileName.txt
 ```
+
+---
 
 ## Multi-Machine Run
 Run this as you would any bash script. For closed environments and air gapped systems, simply download this repo as a .`zip` and extract. Since running for multiple machines, use the launcher script. You do not have to extract to same folder you run from, as the launcher will ask you to input the path to `checks_S11.sh` script. 
@@ -93,6 +95,8 @@ sort -k 2 -k 1 "$combined_results" > "$sorted_results"
 cat "$sorted_results"
 
 ```
+
+---
 
 ## Future Work
 While this script is good, improvements can always be made. Please feel free to improve and also submit bugs. 
