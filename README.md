@@ -8,11 +8,15 @@ Solaris 11 Automatic STIG Checker
 
 A bash script written for Solaris 11 to check all the DISA STIGs for the Oracle Solaris 11 STIG from 2018. This script fixes the incorrect commands that DISA (usually) has in their STIGS. 
 
-It was designed for use on systems that do not have internet connectivity, such as a SCIF, and can be run against any number of hosts. It was tested and used extensivly in an environment with 200+ Solaris machines and it ran well. 
+It was designed for use on systems that do not have internet connectivity, such as a SCIF, and can be run against any number of hosts. It was tested and used extensivly in an environment with 200+ Solaris machines and it ran well. Below is a sample from the `html_combine.sh`:
+
+<img width="1720" alt="image" src="https://user-images.githubusercontent.com/41294610/231830166-822e8673-45c6-4c7f-84a6-9500f1f8cae2.png">
 
 NOTE: These scripts are intentially designed to be low overhead and use only default commands and utilities built into Solaris.
 
-It is comprised of three components: 
+## Composition
+
+This repo is comprised of 4 core components: 
 
 | File | Details   |
 |-----:|-----------|
