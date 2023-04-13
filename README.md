@@ -17,8 +17,9 @@ It is comprised of three components:
 | File | Details   |
 |-----:|-----------|
 | `launcher_S11.sh` | This is what you run if you are running against more than one machine. The `launcher_S11` script calls the `checks_S11` script. You should not use this script for just one machine, as it's not efficient and has too much overhead for a single machine audit. |
-| `checks_S11.sh`  | This contains all the checks, and is called on by the launcher script. It can be run standalone for a single machine.    |
-| `review_S11.sh`  | This is a helper script for if you would like to combine multiple output files and view in a sorted manner. It must be edited manually within the script to point to the output path       |
+| `checks_S11.sh`   | This contains all the checks, and is called on by the launcher script. It can be run standalone for a single machine.    |
+| `review_S11.sh`   | This is a helper script for if you would like to combine multiple output files and view in a sorted manner. It must be edited manually within the script to point to the output path       |
+| `html_combine.sh` | This does what it says, combines the results into an nicely formatted HTML page for easy viewing. Looks for results in same working directory |
 
 ---
 ## Single Machine Run
