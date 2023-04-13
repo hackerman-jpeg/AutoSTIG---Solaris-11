@@ -23,12 +23,6 @@
 ##
 ##################################
 ##
-# Current Date
-##
-today=`date '+%Y-%m-%d'`
-##
-##################################
-##
 # Get the hostname
 ##
 hostname=$(uname -n)
@@ -43,7 +37,7 @@ timestamp=$(date '+%m:%Y-%H:%M')
 ##
 # Ouput file creation
 ##
-GrepFile="Results_${hostname}_${today}_${timestamp}.txt"
+GrepFile="Results_${hostname}_${timestamp}.txt"
 ##
 #################################
 ##
