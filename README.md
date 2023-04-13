@@ -51,7 +51,7 @@ Run this as you would any bash script. For closed environments and air gapped sy
 1. Change permissions on the scripts and make exectuable:
 
 ```bash
-sudo chmod a+x checks_S11.sh launcher_S11.sh
+sudo chmod a+x checks_S11.sh launcher_S11.sh review_S11.sh
 ```
 
 2. Create the `hosts.txt` file and save anywhere (you will input the path to this file when you launch the script). You may also use an existing one, providing it is formatting correctly. The `hosts.txt` file should be formatted such, with a host on each line:
@@ -69,32 +69,17 @@ host2.example.com
 sudo ./launcher_S11.sh
 ```
 
-4. Review findings; this is done as an option in the launcher. When the background tasks and all checks finish, it will ask if you'd like to review the combined findings. If you click no, and want to still combine the fingings and review (instead of `cat`ing each one), you can run the script below: 
+4. Review findings; this is done as an option in the launcher. When the background tasks and all checks finish, it will ask if you'd like to review the combined findings. If you click no, and want to still combine the fingings and review (instead of having to `cat` each one), you can configure and run the `review_S11.sh` script. First, change the line to point to the path where the output files are:
 
 ```bash
-#!/bin/bash
-
-# Enter the directory where the result files are stored
-results_dir="/path/to/result/files"
-
-# Create a file to store the combined results
-combined_results="combined_results.txt"
-touch "$combined_results"
-
-# Process each result file
-for file in "$results_dir"/*; do
-  hostname=$(basename "$file" | cut -d '_' -f 2)
-  grep -E '(FINDING|PASS)' "$file" | sed "s/^/$hostname /" >> "$combined_results"
-done
-
-# Sort the results by check and hostname
-sorted_results="sorted_results.txt"
-sort -k 2 -k 1 "$combined_results" > "$sorted_results"
-
-# Display the sorted results
-cat "$sorted_results"
-
+vim review_S11.sh
 ```
+Then run as normal:
+
+```bash
+ ./review_S11.sh
+```
+
 
 ---
 
