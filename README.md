@@ -1,4 +1,4 @@
-Solaris-11-STIG
+Solaris 11 Automatic STIG Checker
 =========
 [![STIG: Solaris 11](https://img.shields.io/badge/STIG-Solaris%2011-informational)](https://ncp.nist.gov/checklist/668/download/10006)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]([https://www.gnu.org/licenses/gpl-3.0](https://github.com/dimaswell/Solaris-11-STIG/blob/main/LICENSE))
