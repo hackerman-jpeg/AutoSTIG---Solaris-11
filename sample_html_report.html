@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 15px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  .PASS {
+    background-color: #90ee90;
+  }
+  .FINDING {
+    background-color: #ffcccb;
+  }
+</style>
+</head>
+<body>
+
+<h2>Combined STIG Results</h2>
+
+<table>
+  <tr>
+    <th>Check ID</th>
+    <th>Description</th>
+    <th>Hostname</th>
+    <th>Result</th>
+  </tr>
+  <tr>
+    <td>V-49621</td>
+    <td>Cat I - The operating system must configure auditing to reduce the likelihood of storage capacity being exceeded</td>
+    <td>result_host1</td>
+    <td class="PASS">PASS</td>
+  </tr>
+  <tr>
+    <td>V-47875</td>
+    <td>Cat I - The operating system must protect audit information from unauthorized modification.</td>
+    <td>result_host1</td>
+    <td class="FINDING">FINDING</td>
+  </tr>
+  <tr>
+    <td>V-47879</td>
+    <td>Cat I - The operating system must protect audit information from unauthorized deletion.</td>
+    <td>result_host1</td>
+    <td class="PASS">PASS</td>
+  </tr>
+  <tr>
+    <td>V-61025</td>
+    <td>Cat I - X displays must not be exported to the world.</td>
+    <td>result_host1</td>
+    <td class="NOT APPLICABLE">NOT APPLICABLE</td>
+  </tr>
+  <tr>
+    <td>V-49621</td>
+    <td>Cat I - The operating system must configure auditing to reduce the likelihood of storage capacity being exceeded</td>
+    <td>result_host2</td>
+    <td class="PASS">PASS</td>
+  </tr>
+  <tr>
+    <td>V-47875</td>
+    <td>Cat I - The operating system must protect audit information from unauthorized modification.</td>
+    <td>result_host2</td>
+    <td class="PASS">PASS</td>
+  </tr>
+  <tr>
+    <td>V-47879</td>
+    <td>Cat I - The operating system must protect audit information from unauthorized deletion.</td>
+    <td>result_host2</td>
+    <td class="FINDING">FINDING</td>
+  </tr>
+  <tr>
+    <td>V-61025</td>
+    <td>Cat I - X displays must not be exported to the world.</td>
+    <td>result_host2</td>
+    <td class="NOT APPLICABLE">NOT APPLICABLE</td>
+  </tr>
+  <tr>
+    <td>V-49621</td>
+    <td>Cat I - The operating system must configure auditing to reduce the likelihood of storage capacity being exceeded</td>
+    <td>result_host3</td>
+    <td class="FINDING">FINDING</td>
+  </tr>
+  <tr>
+    <td>V-47875</td>
+    <td>Cat I - The operating system must protect audit information from unauthorized modification.</td>
+    <td>result_host3</td>
+    <td class="PASS">PASS</td>
+  </tr>
+  <tr>
+    <td>V-47879</td>
+    <td>Cat I - The operating system must protect audit information from unauthorized deletion.</td>
+    <td>result_host3</td>
+    <td class="PASS">PASS</td>
+  </tr>
+  <tr>
+    <td>V-61025</td>
+    <td>Cat I - X displays must not be exported to the world.</td>
+    <td>result_host3</td>
+    <td class="NOT APPLICABLE">NOT APPLICABLE</td>
+  </tr>
+</table>
+</body>
+</html>
