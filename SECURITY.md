@@ -21,4 +21,4 @@ Please include the following information in your issue:
 
 Once the vulnerability is verified, I will work to identify and implement a fix as quickly as possible. I may also request additional information from you to assist in the resolution process.
 
-I take all security vulnerabilities seriously (as long as they are applicable) and will keep you informed throughout the process. If the vulnerability is accepted, I will provide credit for the discovery in our release notes. If the vulnerability is declined, I will provide a detailed explanation of why it was not accepted.
+I take all security vulnerabilities seriously (as long as they are applicable) and will keep you informed throughout the process. If the vulnerability is accepted, I will provide credit for the discovery in our release notes. If the vulnerability is declined, I will provide a detailed explanation of why it was not accepted. That being said...we all have day jobs.
